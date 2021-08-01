@@ -27,3 +27,14 @@ body h1 {
 footer {
   background-color: #00489a;
 }
+
+/* ELEMENTO BUTTON AGREGADO EN DOM */
+
+section {
+  text-align: center;
+}
+button {
+  padding: 5px;
+  background-color: rgb(138, 138, 150);
+  color: white;
+}

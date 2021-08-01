@@ -21,4 +21,7 @@ ayuda()
 // }
 
 
+const cartName = document.getElementById('card');
+
+cartName.innerHTML = 'Carrito'
 

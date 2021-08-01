@@ -43,3 +43,13 @@ function ordenarDeMayorPrecio () {
     });
     
 }
+
+let card = document.getElementsByClassName("card");
+// console.log(card);
+
+let button = document.createElement("section");
+
+
+button.innerHTML ="<button>MAS PRODUCTOS</button>"
+
+document.body.appendChild(button);
