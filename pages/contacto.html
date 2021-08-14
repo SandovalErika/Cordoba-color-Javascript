@@ -38,52 +38,34 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/contacto.html"> Contacto</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/productos.html#mi-carrito"><i class="bi bi-cart3"></i> Comprar</a>
                     </li>
+                   
                 </ul>
-
             </div>
         </div>
     </nav>
-    <div class="container form">
+    <form id="form" class="container">
+        <div class="mb-3 mt-5">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+            <textarea id="text" class="form-control" name="text" rows="3"></textarea>
+        </div>
+    
+    </form>
+    
+    <div class="btnForm mb-5">
         <div>
-            <div class="col">
-                <label for= "nombre" class="col-form-label">Nombre</label>
-                <input id= "nombre" type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-            </div>
-            <div>
-                <label class="col-form-label">Apellido</label>
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-            </div>
-        </div>
-        <div class="col">
-            <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-12">
-                <input type="email" class="form-control" id="colFormLabel" placeholder="Email">
-            </div>
-        </div>
-        <div class="col">
-            <label for="colFormLabel" class="col-sm-2 col-form-label">Teléfono</label>
-            <div class="col-sm-12">
-                <input type="number" class="form-control" id="colFormLabel" placeholder="Telefono o Celular">
-            </div>
-        </div>
-        
-        <div>
-            <label for="colFormLabel" class=" col-form-label">Quiero recibir información de:</label>
-        </div>
-
-        <div class="row">
-            <label class="col-form-label">Comentarios:</label>
-            <textarea class=" colFormLabel mb-2 text" class="form-control" placeholder="Escribe un comentario"
-                aria-label="textarea">Comentario </textarea>
-        </div>
-        <div class="row-auto">
-            <button type="submit" class="ms-3 me-3 btn btn-primary">Enviar</button>
-            <button type="reset" class="ms-3 me-3 btn btn-primary">Borrar</button>
+            <input id="btnSubmit" class="btn btn-outline-success" type="submit" value="Enviar">
         </div>
     </div>
+    
+    
+    <div class="container" id="print"></div>
+
     <script src="../scripts/contacto.js"></script>
 </body>

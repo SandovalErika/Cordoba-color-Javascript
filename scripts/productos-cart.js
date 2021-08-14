@@ -60,6 +60,7 @@ function imprimirCarrito() {
         let td4 = document.createElement('th')
 
         let btn = document.createElement('button')
+       
         btn.setAttribute('class', 'shoppingCartItem')
         btn.textContent = 'Eliminar del carrito'
         btn.addEventListener('click', removeShoppingCartItem)
@@ -79,3 +80,6 @@ function removeShoppingCartItem(e) {
     localStorage.setItem('Lista', JSON.stringify(Lista));
     item.remove();
 }
+
+$('.my-cart').css({backgroundColor: '#DCDCDC'});
+$('.addToCart').css({borderRadius: '15px'});

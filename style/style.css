@@ -52,14 +52,16 @@ h2 {
   text-align: center;
 }
 
-
-/* ELEMENTO BUTTON AGREGADO EN DOM
-
-section {
+.btnForm {
   text-align: center;
 }
-button {
-  padding: 5px;
-  background-color: rgb(138, 138, 150);
+
+.contac-email {
+  font-weight: bold;
+}
+#listado tr th button.shoppingCartItem {
+  background-color: #ff0000;
+  border-radius: 15px;
+  border: none;
   color: white;
-} */
+}

@@ -46,13 +46,7 @@
         </div>
     </nav>
     <h1>Productos</h1>
-    <div class="boton">
-        <button type="button" class="btn btn-secondary" onclick="ordenarDeMayorPrecio ()">MAYOR A
-            MENOR</button>
-        <button type="button" class="btn btn-secondary" onclick="ordenarDeMenorprecio ()">MENOR A
-            MAYOR</button>
-    </div>
-
+   
     <div id="products">
         <div class="container">
             <div class="row">
@@ -185,9 +179,10 @@
         </div>
     </div>
 
-    <h2 id=mi-carrito>MI CARRITO</h2>
     
-    <div class="container">
+    
+    <div class="container my-cart">
+        <h2 id=mi-carrito>MI CARRITO</h2>
         <table class="table table-hover " id="listado">
         </table>
     </div>
@@ -206,7 +201,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
         <script src="../scripts/productos-cart.js"></script>
-        <script src="../scripts/productos.js"></script>
+        
 </body>
 
 </html>
