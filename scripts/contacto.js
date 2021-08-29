@@ -25,42 +25,26 @@ function imprimirSaludo() {
 }
 
 
+let url = 'https://jsonplaceholder.typicode.com/users'
+
+// API
+$("#btnApi").click(() => {
+    $.get(url, function (request, state) {
+        if (state === "success") {
+
+            request.forEach(element => {
+                $("section").append(`
+                
+                <div class="container-fluid">
+                <p>NOMBRE DE USUARIO: ${element.username} -- CORREO ELECTRONICO: ${element.email}</p>
+                <div>               
+                `);
+            }
+            )
+        };
+    });
+});
 
 
-// const form = $('#user-form');
-// const inputNombreApellido = $('#user-form__nombre-y-apellido');
-// const inputEmail = $ ('#user-form__email');
-// const inputTelefono = $ ('#user-form__telefono');
-// const inputComentario = $ ('#user-form__comentario');
 
-// function user (nombreyApellido, email, telefono, comentario){
-//     this.nombreyApellido = nombreyApellido;
-//     this.email = email;
-//     this.telefono = telefono;
-//     this.comentario = comentario;
-// }
-
-// let listUser = [];
-
-// if (localStorage.getItem('Users')) {     //Listado en la Key
-//     listUser = JSON.parse(localStorage.getItem('users'));    //Transforma de una cadena a un objeto
-// }
-
-// function saveToStorage (key, user) {     //Guardar en el LocalStorage
-//     listUser.push(user);
-//     localStorage.setItem('Listado', JSON.stringify(listUser));  //Lo guarda en un array en el localStorage
-// }
-
-// function getUserFromStorage (key) {
-//     if (localStorage.getItem(key)){
-//         return JSON.parse(localStorage.getItem(key));
-//     }
-// }
-
-// const user1 = new User('Erika Sandoval', 'erikasandoval@hotmail.com', 3513483389, '¿Hay descuento en sinteticos?');
-
-// saveToStorage ('users', user1);
-
-// let userFromStorage =  getUserFromStorage ('users');
-// console.log(UserFromStorage);
 

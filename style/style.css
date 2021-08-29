@@ -15,10 +15,15 @@ body h1 {
 .formatNav {
   background-color: #00489a;
 }
+
+.link {
+  gap: 50px;
+}
+
 .link li a {
   font-family: "Open Sans", sans-serif;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 .card {
   display: flex;
@@ -32,6 +37,12 @@ footer {
 footer p {
   text-align: center;
   color: white;
+  font-size: 15px;
+}
+
+.footer-icon {
+  width: 35px;
+  height: 35px;
 }
 
 .container-icon {
@@ -64,4 +75,36 @@ h2 {
   border-radius: 15px;
   border: none;
   color: white;
+}
+
+.card-body {
+  margin-left: 225px;
+  margin-right: 225px;
+}
+
+.api {
+  margin-bottom: 30px;
+}
+
+.information {
+  margin-top: 80px;
+}
+
+.information h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.padre-mas-Info {
+  display: flex;
+  justify-content: center;
+}
+.masInfo {
+  margin-bottom: 50px;
+}
+.masInfo1 {
+  margin-bottom: 20px;
+}
+.mas-Info {
+  width: 500px;
+  height: auto;
 }

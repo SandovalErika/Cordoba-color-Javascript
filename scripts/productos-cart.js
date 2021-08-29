@@ -29,8 +29,6 @@ function addToShoppingCart(productTitle, productPrice, productImage) {
     localStorage.setItem('Lista', JSON.stringify(Lista));
 };
 
-
-
 function imprimirCarrito() {
 
     let imprimir = JSON.parse(localStorage.getItem('Lista'));
@@ -83,3 +81,13 @@ function removeShoppingCartItem(e) {
 
 $('.my-cart').css({backgroundColor: '#DCDCDC'});
 $('.addToCart').css({borderRadius: '15px'});
+
+
+function clearCart() {
+    $('#listado').empty()
+    window.localStorage.clear()
+    Lista = []
+}
+
+$('#acceptBuy').on('click', clearCart)
+
