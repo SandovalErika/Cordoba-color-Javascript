@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cordoba Color</title>
+    <link rel="shortcut icon" href="../images/logo.jpg">
     <link rel="stylesheet" href="../style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,34 +17,37 @@
 </head>
 
 <body>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg  formatNav">
+            <img class="logo" src="../images/logo.jpg" alt="Logo" width="90px" height="90px">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 link">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/productos.html"><i class="bi bi-cart3"></i>
+                                Productos/Carrito</a>
+                        </li>
     
-    <nav class="navbar navbar-expand-lg  formatNav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0 link">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/productos.html"><i class="bi bi-cart3"></i> Productos/Carrito</a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html"> Contacto</a>
-                    </li>
-
-                   
-                </ul>
-               
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html"> Contacto</a>
+                        </li>
+    
+    
+                    </ul>
+    
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <h1>Productos</h1>
    
     <div id="products">
@@ -53,7 +57,7 @@
                     <div class="card border-secondary mb-4" style="max-width: 20rem;">
                         <div class="card-header">CARTILLA DE COLORES</div>
                         <div class="card-body">
-                            <img src="../images/cartilla-colores.png" width="300px" height=300px" alt="">
+                            <img class="product" src="../images/cartilla-colores.png" width="300px" height="300px" alt="Cartilla de Colores">
                             <p class="card-text">$850</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-center">
                                 <button type="button" class=" addToCart btn btn-success">Agregar al carrito</button>
@@ -66,7 +70,7 @@
                     <div class="card border-secondary mb-4" style="max-width: 20rem;">
                         <div class="card-header">SISTEMA TINTOMÉTRICO</div>
                         <div class="card-body">
-                            <img src="../images/sistema-tintometrico.jpg" width="300px" height="300px" alt="">
+                            <img class="product" src="../images/sistema-tintometrico.jpg" width="300px" height="300px" alt="Sistema Tintométrico">
                             <p class="card-text">$40250</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-center">
                                 <button type="button" class="addToCart btn btn-success">Agregar al carrito</button>
@@ -79,7 +83,7 @@
                     <div class="card border-secondary mb-4" style="max-width: 20rem;">
                         <div class="card-header">SINTETICO TERSUAVE</div>
                         <div class="card-body">
-                            <img src="../images/sintetico.jpg" width="300px" height="300px" alt="">
+                            <img class="product" src="../images/sintetico.jpg" width="300px" height="300px" alt="Sintetico Tersuave">
                             <p class="card-text">$6875</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-center">
                                 <button type="button" class="addToCart btn btn-success">Agregar al carrito</button>
@@ -97,7 +101,7 @@
                     <div class="card border-secondary mb-4" style="max-width: 20rem;">
                         <div class="card-header">RODILLO</div>
                         <div class="card-body">
-                            <img src="../images/rodillos.jpg" width="300px" height="300px" alt="">
+                            <img class="product" src="../images/rodillos.jpg" width="300px" height="300px" alt="Rodillo">
                             <p class="card-text">$1500</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-center">
                                 <button type="button" class="addToCart btn btn-success">Agregar al carrito</button>
@@ -110,7 +114,7 @@
                     <div class="card border-secondary mb-4" style="max-width: 20rem;">
                         <div class="card-header">PACK 6 PINCELES</div>
                         <div class="card-body">
-                            <img src="../images/pinceles.jpg" width="300px" height="300px"alt="">
+                            <img class="product" src="../images/pinceles.jpg" width="300px" height="300px"alt="Pack 6 pinceles">
                             <p class="card-text">$2800</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-center">
                                 <button type="button" class="addToCart btn btn-success">Agregar al carrito</button>
@@ -123,7 +127,7 @@
                     <div class="card border-secondary mb-4" style="max-width: 20rem;">
                         <div class="card-header">PACK 4 LIJAS</div>
                         <div class="card-body">
-                            <img src="../images/lijas.jpg" width="300px" height="300px"  alt="">
+                            <img class="product" src="../images/lijas.jpg" width="300px" height="300px"  alt="Pack 4 lijas">
                             <p class="card-text">$350</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-center">
                                 <button type="button" class="addToCart btn btn-success">Agregar al carrito</button>
@@ -140,7 +144,7 @@
                     <div class="card border-secondary mb-4" style="max-width: 20rem;">
                         <div class="card-header">ENTONADOR UNIVERSAR TERSUAVE</div>
                         <div class="card-body">
-                            <img src="../images/entonadores.jpg" width="300px" height="300px" alt="">
+                            <img class="product" src="../images/entonadores.jpg" width="300px" height="300px" alt="Entonador Universal Tersuave">
                             <p class="card-text">$7500</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-center">
                                 <button type="button" class="addToCart btn btn-success">Agregar al carrito</button>
@@ -153,7 +157,7 @@
                     <div class="card border-secondary mb-4" style="max-width: 20rem;">
                         <div class="card-header">IMPERMEABILIZANTE PLAVICOM</div>
                         <div class="card-body">
-                            <img src="../images/impermeabilizante.png" width="300px" height="300px" alt="">
+                            <img class="product" src="../images/impermeabilizante.png" width="300px" height="300px" alt="Impermeabilizante Plavicom">
                             <p class="card-text">$10980</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-center">
                                 <button type="button" class="addToCart btn btn-success">Agregar al carrito</button>
@@ -166,7 +170,7 @@
                     <div class="card border-secondary mb-4" style="max-width: 20rem;">
                         <div class="card-header">LATEX CONTRUCTOR ALBA</div>
                         <div class="card-body">
-                            <img src="../images/latex.jpg" width="300px" height="300px" alt="">
+                            <img class="product" src="../images/latex.jpg" width="300px" height="300px" alt="Latex Contructor Alba">
                             <p class="card-text">$8260</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-center">
                                 <button type="button" class="addToCart btn btn-success">Agregar al carrito</button>
@@ -182,11 +186,11 @@
     
     <div class="container my-cart">
         <h2 id=mi-carrito>MI CARRITO</h2>
-        <table class="table table-hover " id="listado">
+        <table class="table table-hover table format" id="listado">
         </table>
     </div>
     <hr>
-
+    
     <div class="card-body">
         <div class="d-grid gap-2">
             <button type="button" class="btn btn-outline-success" id="acceptBuy">Aceptar compra</button>

@@ -44,25 +44,7 @@ $("#btnApi").click(() => {
         };
     });
 
-    
+
 
 });
 
-//ENVIAR API
-
-// const user = {email : mail, texto: text};
-
-// $('#form').click(() => {
-//     
-//     const user = {email : mail, texto: text};
-    
-//     $.post (url, user, function (state) {
-//         if (state === 'success') {
-//         swal.fire (
-//             'Buen trabajo',
-//             'Sus datos fueron guardados con exito'
-//         )
-//         }
-//     })
-
-// })

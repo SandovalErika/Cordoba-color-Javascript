@@ -13,7 +13,7 @@ body h1 {
   text-align: center;
 }
 .formatNav {
-  background-color: #00489a;
+  background-color: rgb(0, 72, 154, 0.8);
 }
 
 .link {
@@ -24,6 +24,9 @@ body h1 {
   font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 20px;
+}
+.link li a:hover {
+  color: black;
 }
 .card {
   display: flex;
@@ -107,4 +110,26 @@ h2 {
 .mas-Info {
   width: 500px;
   height: auto;
+}
+.logo {
+  margin: 15px;
+}
+.marquee {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #00489a;
+}
+
+.marquee marquee {
+  font-size: 20px;
+}
+
+#btnApi {
+  margin-top: 100px;
+}
+
+.product {
+  overflow: hidden;
 }

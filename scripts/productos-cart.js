@@ -60,7 +60,7 @@ function imprimirCarrito() {
         let btn = document.createElement('button')
        
         btn.setAttribute('class', 'shoppingCartItem')
-        btn.textContent = 'Eliminar del carrito'
+        btn.textContent = 'Eliminar'
         btn.addEventListener('click', removeShoppingCartItem)
         td4.append(btn)
         tr.append(td4)
