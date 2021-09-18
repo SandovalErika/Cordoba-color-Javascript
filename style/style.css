@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+/* Generales */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,8 +15,13 @@ body h1 {
   margin: 10px;
   text-align: center;
 }
-.formatNav {
+
+.browserFormat {
   background-color: rgb(0, 72, 154, 0.8);
+}
+
+.logo {
+  margin: 15px;
 }
 
 .link {
@@ -25,12 +33,9 @@ body h1 {
   color: white;
   font-size: 20px;
 }
+
 .link li a:hover {
   color: black;
-}
-.card {
-  display: flex;
-  align-items: center;
 }
 
 footer {
@@ -43,11 +48,6 @@ footer p {
   font-size: 15px;
 }
 
-.footer-icon {
-  width: 35px;
-  height: 35px;
-}
-
 .container-icon {
   display: flex;
   justify-content: center;
@@ -56,14 +56,15 @@ footer p {
   padding-bottom: 20px;
 }
 
-.card-text {
-  text-align: center;
-  margin: 20px;
-  font-weight: 1000;
-  font-size: 25px;
+/* Contacto */
+
+.api {
+  margin-bottom: 30px;
 }
-h2 {
-  text-align: center;
+
+.footer-icon {
+  width: 35px;
+  height: 35px;
 }
 
 .btnForm {
@@ -73,6 +74,29 @@ h2 {
 .contac-email {
   font-weight: bold;
 }
+
+#btnApi {
+  margin-top: 100px;
+}
+
+/* Productos */
+
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.card-text {
+  text-align: center;
+  margin: 20px;
+  font-weight: 1000;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+}
+
 #listado tr th button.shoppingCartItem {
   background-color: #ff0000;
   border-radius: 15px;
@@ -85,9 +109,11 @@ h2 {
   margin-right: 225px;
 }
 
-.api {
-  margin-bottom: 30px;
+.product {
+  overflow: hidden;
 }
+
+/* Index */
 
 .information {
   margin-top: 80px;
@@ -97,23 +123,21 @@ h2 {
   margin-bottom: 20px;
   text-align: center;
 }
-.padre-mas-Info {
+.fatherInformation {
   display: flex;
   justify-content: center;
 }
-.masInfo {
+.moreInf {
   margin-bottom: 50px;
 }
-.masInfo1 {
+.moreInf1 {
   margin-bottom: 20px;
 }
-.mas-Info {
+.more-Inf {
   width: 500px;
   height: auto;
 }
-.logo {
-  margin: 15px;
-}
+
 .marquee {
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -124,12 +148,4 @@ h2 {
 
 .marquee marquee {
   font-size: 20px;
-}
-
-#btnApi {
-  margin-top: 100px;
-}
-
-.product {
-  overflow: hidden;
 }

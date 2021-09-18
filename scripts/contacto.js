@@ -1,20 +1,20 @@
 const btnSubmit = document.getElementById("btnSubmit");
-btnSubmit.addEventListener("click", enviarFormulario);
+btnSubmit.addEventListener("click", sendForm);
 
 
 
 const suscripcion = [];
 
-function enviarFormulario() {
+function sendForm() {
     const mail = document.getElementById("email").value;
     const text = document.getElementById("text").value;
     suscripcion.push({ mail: mail, text: text });
 
-    imprimirSaludo()
+    printGreeting()
 }
 
 
-function imprimirSaludo() {
+function printGreeting() {
 
 
     const print = document.getElementById("print");
